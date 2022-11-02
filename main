@@ -1,0 +1,7 @@
+Copy paste below script in terminal after connecting device via adb. Works for both rooted and non-rooted android devices.
+
+adb -d shell am force-stop com.oasisfeng.greenify
+adb -d shell pm grant com.oasisfeng.greenify android.permission.GET_APP_OPS_STATS
+adb -d shell pm grant com.oasisfeng.greenify android.permission.READ_LOGS
+adb -d shell pm grant com.oasisfeng.greenify android.permission.WRITE_SECURE_SETTINGS
+adb -d shell pm grant com.oasisfeng.greenify android.permission.DUMP
